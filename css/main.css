@@ -1,0 +1,44 @@
+body {
+  background-color: pink;
+}
+
+h1 {
+  color: blue;
+  font-family: cursive;
+  font-size: 800;
+}
+
+section {
+  display: block;
+}
+
+#top-banner {
+  background-image: url("../images/pink_sunset.jpg");
+  background-attachment: scroll, scroll, scroll, fixed;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-position: bottom left, bottom right, top left, top center;
+	background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+	color: #fff;
+	cursor: default;
+	padding: 6em 0;
+	text-align: center;
+}
+
+#top-banner .inner {
+			-moz-animation: reveal-banner 1s 0.25s ease-in-out;
+			-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
+			-ms-animation: reveal-banner 1s 0.25s ease-in-out;
+			animation: reveal-banner 1s 0.25s ease-in-out;
+			-moz-animation-fill-mode: forwards;
+			-webkit-animation-fill-mode: forwards;
+			-ms-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+			background: rgba(52, 27, 43, 0.5);
+			color: #fff;
+			display: inline-block;
+			opacity: 0;
+			padding: 3em;
+			text-align: center;
+		}
