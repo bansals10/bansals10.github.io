@@ -1,44 +1,100 @@
+header {
+  text-align: left;
+}
+
 body {
+  /* canvas */
+
+  background-image: url(../images/pink_sunset.jpg);
+  background-repeat: no-repeat center;
+  background-size: cover;
+
+  /* text */
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  font-style: none;
+  font-weight: normal;
+
+  /* spacing */
+  margin:0;
+  padding:10% 10% 10% 10%;
+}
+
+h2{
+  font-size: 2em;
+}
+
+p{
+  font-size: 1em;
+  line-height: 1em;
+}
+
+/* Centered text */
+#center_text {
+  text-align: center;
+  font-family: 'Clicker Script', cursive;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Container holding the image and the text */
+#banner {
+  position: relative;
+  text-align: center;
+  color: black;
   background-color: pink;
+  height: 100px;
 }
 
-h1 {
-  color: blue;
-  font-family: cursive;
-  font-size: 800;
+
+#personal_img {
+  border-radius: 50%;
+  float:right;
+  width:400px;
+  height:266px;
 }
 
-section {
-  display: block;
+.btn {
+  border: 2px solid black;
+  color: black;
+  padding: 7px 7px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-#top-banner {
-  background-image: url("../images/pink_sunset.jpg");
-  background-attachment: scroll, scroll, scroll, fixed;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  background-position: bottom left, bottom right, top left, top center;
-	background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-	color: #fff;
-	cursor: default;
-	padding: 6em 0;
-	text-align: center;
+/* Green */
+.project {
+  border-color: black;
+  width:200px;
+  height:104px;
 }
 
-#top-banner .inner {
-			-moz-animation: reveal-banner 1s 0.25s ease-in-out;
-			-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
-			-ms-animation: reveal-banner 1s 0.25s ease-in-out;
-			animation: reveal-banner 1s 0.25s ease-in-out;
-			-moz-animation-fill-mode: forwards;
-			-webkit-animation-fill-mode: forwards;
-			-ms-animation-fill-mode: forwards;
-			animation-fill-mode: forwards;
-			background: rgba(52, 27, 43, 0.5);
-			color: #fff;
-			display: inline-block;
-			opacity: 0;
-			padding: 3em;
-			text-align: center;
-		}
+#chiventure {
+  background-color: green;
+  float:left;
+}
+
+#seek {
+  background-color: purple;
+  float:left;
+}
+
+#portfolio {
+  background-color: #FF1493;
+  float:left;
+}
+
+#chiventure:hover {
+  background-color: #4CC912;
+}
+
+#seek:hover {
+  background-color: #B768E5;
+}
+
+#portfolio:hover {
+  background-color: #ff85a3;
+}
