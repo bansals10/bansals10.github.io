@@ -1,13 +1,11 @@
 header {
   text-align: left;
+  padding:0% 0% 0% 0%;
 }
 
 body {
   /* canvas */
-
-  background-image: url(../images/pink_sunset.jpg);
-  background-repeat: no-repeat center;
-  background-size: cover;
+  background-color: pink;
 
   /* text */
   font-family: 'EB Garamond', serif;
@@ -29,6 +27,31 @@ p{
   line-height: 1em;
 }
 
+.vertical_bar{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+#logo {
+  color: black;
+}
+
 /* Centered text */
 #center_text {
   text-align: center;
@@ -42,11 +65,13 @@ p{
 
 /* Container holding the image and the text */
 #banner {
+  background-image: url(../images/pink_sunset.jpg);
   position: relative;
   text-align: center;
   color: black;
-  background-color: pink;
   height: 100px;
+  background-repeat: no-repeat center;
+  background-size: cover;
 }
 
 
