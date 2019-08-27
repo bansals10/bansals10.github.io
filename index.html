@@ -1,138 +1,122 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
   <title>Shriya Bansal</title>
   <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
   <script src="js/script.js"></script>
+
   <link href="https://fonts.googleapis.com/css?family=Clicker+Script|EB+Garamond&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <!-- Top-right: logo -->
   <header>
-    <h1><a href="index2.html" id="logo">Shriya Bansal</a></h1>
+    <!-- New STUFF -->
+    <ul id="main-nav">
+      <li style="float:left"><a class="active" href="index.html">Shriya Bansal</a></li>
+      <li><a href="#dance">Dance</a></li>
+      <li><a href="#advocate">Adovcate</a></li>
+      <li><a href="#developer">Developer</a></li>
+      <li><a href="#about">About Me</a></li>
+    </ul>
+
+    <!-- END -->
+
   </header>
 
-  <div class="container">
-    <img src="images/point_pic_full.jpg" alt="Me!" id="personal_img">
-    <div class="center">
-      <strong>advocate </strong>for women in tech,
-      </br>
-      software<strong> developer</strong>,
-      </br>
-      and data <strong>scientist</strong>
-    </div>
-  </div>
+  <div class="content">
 
-<!-- Parallax Scrolling -->
-  <!-- <div class="bgimg-1">
-    <div class="caption">
-    <span class="border">ABOUT ME</span>
-    </div>
-  </div> -->
-
-  <!-- A bit about me paragraph -->
-  <div class="intro">
-    <p>
-    I am a rising second year computer science major at the University of Chicago.
-    I enjoy exploring the application of programming to a variety of fields ranging
-     from computational biology to economics.  On campus, I enjoy dancing as a
-     choreographer for
-     <a href="https://www.facebook.com/apsara.uchicago/" target="_blank" class="links">Apsara </a>
-     and  <a href="https://www.facebook.com/UChicagoSASA/" target="_blank" class="links">SASA </a>
-     and making coding more accessible to girls through
-     <a href="http://compileher.com/" target="_blank" class="links">CompileHer</a>.
-    </p>
-  </div>
-
-  <div class="bgimg-2">
-    <div class="caption">
-    <span class="border typewriter" style="font-size:25px;color: #f7f7f7;">ADVOCATE FOR WOMEN IN TECH</span>
-    </div>
-  </div>
-
-  <!-- Women in tech PP -->
-  <div style="position:relative;">
-    <div class="row">
-      <div class="zoom">
-        <div class="column" style="background-color:#1F255E;">
-          <h2><img src="images/compileher.jpg" alt="CompileHer" id="wit"></h2>
-          <p>As the Internal Outreach Chair, I organized 100 volunteers for our
-          large scale events tailored towards middle school girls. The dreamHer hackathon
-        and superpowHer tech capstone were both incredible experiences! I am looking forward
-      to working as the Events Lead next year.</p>
-        </div>
-      </div>
-    <div class="zoom">
-      <div class="column" style="background-color:#3D437C;">
-        <h2><img src="images/gwc.png" alt="Girls Who Code" id="wit"></h2>
-        <p>I have spent the past eight weeks teaching girls in the Chicago area
-        how to program. From preliminary Choose Your Own Adventure games in Scratch
-        to automated electric pianos, I have helped the girls come together
-        to form a community of future technologists.</p>
-      </div>
-    </div>
-      <div class="zoom">
-        <div class="column" style="background-color:#656BA4;">
-          <h2><img src="images/ghc.png" alt="Grace Hopper Conference" id="wit"></h2>
-          <p>I have been awarded the Career Advancement GHC Grant to attend the
-            Grace Hopper Celebration in October, 2019.
-            I am looking forward to inspiring and being inspired
-            by the amazing women at the conference.
-            Stay tuned for updates about the conference!</p>
+    <div class="container">
+      <img src="images/point_pic_full.jpg" alt="Me!" id="personal_img">
+      <div class="center">
+        <div class="typewriter">
+          software<strong> developer</strong>,
+          </br>
+          <strong>advocate </strong>for women in tech,
+          </br>
+          and data <strong>scientist</strong>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="bgimg-3">
-    <div class="caption">
-    <span class="border" style="font-size:25px;color: #f7f7f7;">SOFTWARE DEVELOPMENT</span>
+  <!-- Parallax Scrolling -->
+
+    <!-- A bit about me paragraph -->
+    <div class="intro" id="about">
+      <p>
+      I am a second year computer science major at the University of Chicago.
+      I enjoy exploring the application of programming to a variety of fields ranging
+       from computational biology to economics.  On campus, I enjoy dancing as a
+       choreographer for
+       <a href="https://www.facebook.com/apsara.uchicago/" target="_blank" class="links">Apsara </a>
+       and  <a href="https://www.facebook.com/UChicagoSASA/" target="_blank" class="links">SASA </a>
+       and making coding more accessible to girls through
+       <a href="http://compileher.com/" target="_blank" class="links">CompileHer</a>.
+      </p>
     </div>
-  </div>
 
-<!-- Software Projects Content -->
-  <div style="position:relative; padding:5%;">
-    <div class="row">
+    <div class="bgimg-3" id="developer">
+      <div class="caption">
+      <span class="border" style="font-size:25px;color: #f7f7f7;">SOFTWARE DEVELOPMENT</span>
+      </div>
+    </div>
+
+  <!-- Software Projects Content -->
+    <div style="position:relative; padding:5%;">
+      <div class="row">
+
+          <div class="column">
+            <a href="https://github.com/uchicago-cs/chiventure" target="_blank">
+              <button class="btn" id="chiventure"><img src="images/chiventure.jpg"
+              alt="Chiventure!" class = "project"></button>
+            </a>
+            <p>
+              <b>C</b>: Through my Software Development class, I worked on the World Description
+               Language Team for a text-based adventure game. We worked in an Agile environment
+              and followed scrum methodology.
+            </p>
+          </div>
 
         <div class="column">
-          <a href="https://github.com/uchicago-cs/chiventure" target="_blank">
-            <button class="btn" id="chiventure"><img src="images/chiventure.jpg"
-            alt="Chiventure!" class = "project"></button>
+          <a href="https://bansals10.github.io/seek_uncommon_hacks/" target="_blank">
+            <button class="btn" id="portfolio"><img src="images/seek.jpg"
+            alt="SEEK" class ="project"></button>
           </a>
           <p>
-            <b>C</b>: Through my Software Development class, I worked on the World Description
-             Language Team for a text-based adventure game. We worked in an Agile environment
-            and followed scrum methodology.
+            <strong>HTML/CSS/JavaScript/jQuery</strong>: At Uncommon Hacks 2019, I created this interactive site.
           </p>
         </div>
 
-      <div class="column">
-        <a href="https://github.com/bansals10/portfolio" target="_blank">
-          <button class="btn" id="portfolio"><img src="images/website.jpg"
-          alt="Personal Website!" class ="project"></button>
-        </a>
-        <p>
-          <strong>HTML/CSS/JavaScript</strong>: This is my personal portfolio.
-        </p>
+        <div class="column">
+          <a href="https://github.com/bansals10/portfolio" target="_blank">
+            <button class="btn" id="portfolio"><img src="images/website.jpg"
+            alt="Personal Website!" class ="project"></button>
+          </a>
+          <p>
+            <strong>HTML/CSS/JavaScript</strong>: This is my personal portfolio.
+          </p>
+        </div>
       </div>
 
-      <div class="column">
-        <a href="https://bansals10.github.io/seek_uncommon_hacks/" target="_blank">
-          <button class="btn" id="portfolio"><img src="images/seek.jpg"
-          alt="SEEK" class ="project"></button>
-        </a>
-        <p>
-          <strong>HTML/CSS/JavaScript/jQuery</strong>: At Uncommon Hacks 2019, I created this interactive site.
-        </p>
-      </div>
-    </div>
-
-    <div class="row">
+      <div class="row">
 
         <div class="column">
-          <a href="project3.rkt" target="_blank">
+          <a href="https://github.com/bansals10/malloc" target="_blank">
+            <button class="btn" id="portfolio"><img src="images/malloc.jpg"
+            alt="Memory Allocator" class ="project"></button>
+          </a>
+          <p>
+            <strong>HTML/CSS/JavaScript</strong>: This is my personal portfolio.
+          </p>
+        </div>
+
+        <div class="column">
+          <a href="src/project3.rkt" target="_blank">
             <button class="btn" id="chiventure"><img src="images/go.jpg"
             alt="Go" class = "project"></button>
           </a>
@@ -141,30 +125,69 @@
           </p>
         </div>
 
-      <div class="column">
-        <a href="https://github.com/bansals10/portfolio" target="_blank">
-          <button class="btn" id="portfolio"><img src="images/malloc.jpg"
-          alt="Memory Allocator" class ="project"></button>
-        </a>
-        <p>
-          <strong>HTML/CSS/JavaScript</strong>: This is my personal portfolio.
-        </p>
       </div>
 
     </div>
 
+    <div class="bgimg-2" id="advocate">
+      <div class="caption">
+        <span class="border typewriter" style="font-size:25px;color: #f7f7f7;">ADVOCATE FOR WOMEN IN TECH</span>
+      </div>
+    </div>
+
+    <!-- Women in tech PP -->
+    <div style="position:relative;">
+      <div class="row">
+        <div class="zoom">
+          <div class="column" style="background-color:#1F255E;">
+            <h2><img src="images/compileher.jpg" alt="CompileHer" id="wit"></h2>
+            <p>As the Internal Outreach Chair, I organized 100 volunteers for our
+            large scale events tailored towards middle school girls. The dreamHer hackathon
+          and superpowHer tech capstone were both incredible experiences! I am looking forward
+        to working as the Events Lead next year.</p>
+          </div>
+        </div>
+      <div class="zoom">
+        <div class="column" style="background-color:#3D437C;">
+          <h2><img src="images/gwc.png" alt="Girls Who Code" id="wit"></h2>
+          <p>I have spent the past eight weeks teaching girls in the Chicago area
+          how to program. From preliminary Choose Your Own Adventure games in Scratch
+          to automated electric pianos, I have helped the girls come together
+          to form a community of future technologists.</p>
+        </div>
+      </div>
+        <div class="zoom">
+          <div class="column" style="background-color:#656BA4;">
+            <h2><img src="images/ghc.png" alt="Grace Hopper Conference" id="wit"></h2>
+            <p>I have been awarded the Career Advancement GHC Grant to attend the
+              Grace Hopper Celebration in October, 2019.
+              I am looking forward to inspiring and being inspired
+              by the amazing women at the conference.
+              Stay tuned for updates about the conference!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="bgimg-4" id="dance">
+    <div class="caption">
+    <span class="border">DANCE</span>
+    </div>
   </div>
 
-  <!-- <div class="bgimg-1">
-    <div class="caption">
-    <span class="border">SIDE PROJECTS</span>
-    </div>
-  </div> -->
+  <div class="intro">
+    <p>
+      I enjoy dancing the Indian Classical Dance form, Kathak.
+    </p>
+    <iframe width="1120" height="630" style="float:center; padding:0%; margin:0%;" src="https://www.youtube.com/embed/HmTN4bIQXe0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  </div>
+
 <!-- END -->
 
-<div class="typewriter">
+<!-- <div class="typewriter">
   <h1>The cat and the hat.</h1>
-</div>
+</div> -->
 
 
 </body>
