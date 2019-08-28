@@ -1,19 +1,18 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//   window.onscroll = function() {myFunction()};
-//
-//   var navbar = document.getElementById("main-nav");
-//   var sticky = navbar.offsetTop;
-//
-//   function myFunction() {
-//     if (window.pageYOffset >= sticky) {
-//       navbar.classList.add("sticky")
-//     } else {
-//       navbar.classList.remove("sticky");
-//     }
-//   }
-// })
+// FIX ME!!!
+document.addEventListener('DOMContentLoaded', function() {
+  window.onscroll = function() {myFunction()};
 
-var withBreaks = "Hello World. \n My name is Jennifer. \n What is your name?"
+  var navbar = document.getElementById("logo");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+})
 
 
 $(document).ready(function() {
@@ -29,19 +28,41 @@ $(document).ready(function() {
   });
 });
 
+// document.addEventListener('DOMContentLoaded', function() {
+//   var i = 0;
+//
+//   var txt = "software developer, sophomore at UChicago, and advocate for women in tech";
+//   var speed = 50;
+//
+//   function typeWriter() {
+//     if (i < txt.length) {
+//       document.getElementById("demo").innerHTML += txt.charAt(i);
+//       i++;
+//       setTimeout(typeWriter, speed);
+//     }
+//   }
+//
+//   // typeWriter()
+// })
+
 document.addEventListener('DOMContentLoaded', function() {
-  var i = 0;
+  var slideIndex = 0;
+  showSlides();
 
-  var txt = "software developer, sophomore at UChicago, and advocate for women in tech";
-  var speed = 50;
-
-  function typeWriter() {
-    if (i < txt.length) {
-      document.getElementById("demo").innerHTML += txt.charAt(i);
-      i++;
-      setTimeout(typeWriter, speed);
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
     }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
   }
-
-  // typeWriter()
 })
