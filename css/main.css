@@ -4,16 +4,12 @@ body {
 
   /* text */
   font-family: 'EB Garamond', serif;
-  font-size: 1.5em;
+  font-size: 1.75vw;
   font-weight: normal;
 
   /* spacing */
   margin:0;
-}
-
-body {
   height: 100%;
-  margin: 0;
 }
 
 #logo {
@@ -21,7 +17,7 @@ body {
   font-family: 'Clicker Script', cursive;
   text-decoration:none;
   font-weight: 900;
-  font-size: 1.5em;
+  font-size: 3vw;
 }
 
 #logo:hover {
@@ -36,7 +32,7 @@ body {
 .center {
   position: absolute;
   font-family: 'Clicker Script', cursive;
-  font-size: 2.5em;
+  font-size: 2vw;
   top: 20%;
   left: 60%;
   transform: translate(-50%, -50%);
@@ -45,7 +41,7 @@ body {
 
 .intro {
   color: white;
-  font-size: 1.5em;
+  font-size: 1.5vw;
   padding-top: 2%;
   padding-left: 10%;
   padding-right: 10%;
@@ -57,7 +53,7 @@ body {
 /* slideshow */
 .kathak {
   color: white;
-  font-size: 1.5em;
+  font-size: 1.5vw;
   padding: 2%;
   margin-left: 20%;
   margin-right: 20%;
@@ -160,7 +156,7 @@ img {vertical-align: middle;}
   font-family: 'Clicker Script', cursive;
   text-decoration:none;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 2em;
 }
 
 .header {
@@ -294,10 +290,11 @@ h3 {
 /* DEMO-SPECIFIC STYLES */
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .05em transparent; /* The typwriter cursor */
+  border-right: .05vw transparent; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .1em; /* Adjust as needed */
+  letter-spacing: .1vw; /* Adjust as needed */
+  font-size: 4vw;
   animation:
     typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;

@@ -1,4 +1,4 @@
-// FIX ME!!!
+// Sticky logo
 document.addEventListener('DOMContentLoaded', function() {
   window.onscroll = function() {myFunction()};
 
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 })
 
-
+// Sliding scroll
 $(document).ready(function() {
   $('#main-nav li a').click(function(e) {
 
@@ -28,23 +28,7 @@ $(document).ready(function() {
   });
 });
 
-// document.addEventListener('DOMContentLoaded', function() {
-//   var i = 0;
-//
-//   var txt = "software developer, sophomore at UChicago, and advocate for women in tech";
-//   var speed = 50;
-//
-//   function typeWriter() {
-//     if (i < txt.length) {
-//       document.getElementById("demo").innerHTML += txt.charAt(i);
-//       i++;
-//       setTimeout(typeWriter, speed);
-//     }
-//   }
-//
-//   // typeWriter()
-// })
-
+//Slideshow of pictures
 document.addEventListener('DOMContentLoaded', function() {
   var slideIndex = 0;
   showSlides();
