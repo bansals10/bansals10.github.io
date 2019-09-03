@@ -6,6 +6,7 @@
   <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
   <script src="js/script.js"></script>
@@ -20,6 +21,7 @@
       <li style="float:left;">
         <a id="logo" href="index.html">Shriya Bansal</a>
       </li>
+      <li><a href="#contact">Contact</a></li>
       <li><a href="#dance">Creativity</a></li>
       <li><a href="#advocate">Adovcate</a></li>
       <li><a href="#developer">Projects</a></li>
@@ -78,7 +80,7 @@
               alt="Chiventure!" class = "project"></button>
             </a>
             <p>
-              <b>C</b>: I worked on the World Description Language Team for a
+              <b style="font-family: 'Clicker Script', cursive;">C</b>: I worked on the World Description Language Team for a
               text-based adventure game engine in my software development class.
               We worked in an Agile environment and followed scrum methodology
               with bi-weekly sprints and weekly team meetings. Using the YAML
@@ -93,7 +95,7 @@
             alt="SEEK" class ="project"></button>
           </a>
           <p>
-            <strong>HTML/CSS/JavaScript/jQuery</strong>: At Uncommon Hacks 2019,
+            <b style="font-family: 'Clicker Script', cursive;">HTML/CSS/JavaScript/jQuery</b>: At Uncommon Hacks 2019,
             my team created this interactive site within 24 hours. Inspired by
             J.P. Morgan's "Best Hack for Social Good" challenge, we developed
             a website to teach financial literacy to univeristy students. Through
@@ -108,7 +110,7 @@
             alt="Personal Website!" class ="project"></button>
           </a>
           <p>
-            <strong>HTML/CSS/JavaScript/jQuery</strong>:
+            <b style="font-family: 'Clicker Script', cursive;">HTML/CSS/JavaScript/jQuery</b>:
             I created my personal portfolio to highlight some of the exciting
             projects that I have worked on over the years. Building this website
             from scratch was a very fulfilling process and gave me experience with
@@ -126,7 +128,7 @@
             alt="Memory Allocator" class ="project"></button>
           </a>
           <p>
-            <strong>C</strong>: I developed a memory allocator through my winter
+            <strong style="font-family: 'Clicker Script', cursive;">C</strong>: I developed a memory allocator through my winter
             quarter Data Structures course. Using a binary search tree traversal,
             I applied an efficient algorithm that returned the address in memory
             of the usable storage. This project was completed over two weeks as
@@ -143,7 +145,7 @@
             alt="Go" class = "project"></button>
           </a>
           <p>
-            <strong>Racket</strong>: Over six weeks, I utilized functional programming
+            <strong style="font-family: 'Clicker Script', cursive;">Racket</strong>: Over six weeks, I utilized functional programming
             techniques to create the ancient Chinese game, Go. I built all
             components of this game for the final project for my first
             data structures class and incorporated numerous UI elements such as
@@ -159,7 +161,7 @@
             alt="Data Science" class = "project"></button>
           </a>
           <p>
-            Performed analysis of unknown DNA sequence using next-generation
+            <b style="font-family: 'Clicker Script', cursive;">R</b>: Performed analysis of unknown DNA sequence using next-generation
             sequencing techniques and the Univeristy of Chicago supercomputer,
             Midway. Analyzed sequence data using R to identify chromosome
             distributions and generated conclusions by cross referencing exisiting
@@ -186,7 +188,7 @@
             <p>As the Internal Outreach Chair, I organized 100 volunteers for our
             large scale events tailored towards middle school girls. The dreamHer hackathon
           and superpowHer tech capstone were both incredible experiences! I am looking forward
-        to working as the Events Lead next year.</p>
+        to working as Events Lead.</p>
           </div>
         </div>
       <div class="zoom">
@@ -218,9 +220,15 @@
   </div>
 
   <div class="kathak">
-    <p>
-      I have performing the Indian Classical dance form, Kathak for over thirteen
-      years. 
+    <p style="padding-left:20%; padding-right:20%; padding-bottom: 7%;">
+      For over thirteen years, I have learning, performing, and teaching
+      the Indian Classical dance form, Kathak. In 2016, I had my Kathak
+      Rangmanch Visharad, a three hour long graduation performance for
+      an audience of 700 people. After this event, I began teaching
+      younger students at Tarana Kathak Dance Academy. Through the dances I
+      lead, I passed on my skills and emphasized how my students could form a
+      personal bond with Kathak and our rich cultural heritage. At UChicago,
+      I continue sharing my passion with Apsara and SASA.
     </p>
     <iframe width="560" height="315" style="float:center; padding:0%; margin:0%;"
     src="https://www.youtube.com/embed/HmTN4bIQXe0" frameborder="0"
@@ -264,6 +272,43 @@
       <span class="dot"></span>
     </div>
   </div>
+
+  <div class="bgimg-5" id="contact">
+    <div class="caption">
+    <span class="border">CONTACT ME</span>
+    </div>
+  </div>
+
+  <div class="contact_container">
+  <form action="action_page.php" method="post">
+
+    <label for="name"></label>
+    <input type="text" id="name" name="name" placeholder="Name">
+
+    <label for="email"></label>
+    <input type="text" id="email" name="email" placeholder="Email">
+
+    <label for="message"></label>
+    <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+  <div id="icons">
+     <a href="https://linkedin.com/in/shriyabansal/" target="_blank">
+       <button class="iconbtn"><i class="fa fa-linkedin-square"
+         style="padding-right:10%;"></i></button></a>
+     <a href="https://github.com/bansals10" target="_blank">
+       <button class="iconbtn"><i class="fa fa-github" style="padding-right:10%;"></i></button>
+     </a>
+     <a href="mailto:bansals@uchicago.edu">
+     <button class="iconbtn"><i class="fa fa-envelope"></i></button>
+     </a>
+
+  </div>
+
 
 </div>
 

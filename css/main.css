@@ -204,7 +204,7 @@ img {vertical-align: middle;}
 
 /* Parallax */
 
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
   position: relative;
   opacity: 0.65;
   background-attachment: fixed;
@@ -232,6 +232,11 @@ img {vertical-align: middle;}
 .bgimg-4 {
   background-image: url("../images/img_parallax4.jpg");
   min-height: 800px;
+}
+
+.bgimg-5 {
+  background-image: url("../images/img_parallax5.jpg");
+  min-height: 400px;
 }
 
 .caption {
@@ -280,11 +285,11 @@ h3 {
   height: 250px;
   position: relative;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 20%;
 }
 
 .project:hover {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 /* DEMO-SPECIFIC STYLES */
@@ -348,6 +353,67 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: ##1f287d;
+  background-color: #1f287d;
   font-weight: 400;
+}
+
+/* Icons */
+#icons {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+
+}
+
+.iconbtn {
+  background-color: inherit;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size:6vw;
+  opacity: 0.5;
+}
+
+/* Darker background on mouse-over */
+.iconbtn:hover {
+  opacity: 1;
+}
+
+/* Contact form */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #474D86;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #1f287d;
+}
+
+/* Add a background color and some padding around the form */
+.contact_container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom:15px;
+  margin-top:100px;
+  margin-left:300px;
+  margin-right:300px;
 }
