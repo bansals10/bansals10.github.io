@@ -1,2 +1,2 @@
 # portfolio
-https://bansals10.github.io/shriyabansal/
+https://bansals10.github.io/
