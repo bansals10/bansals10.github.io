@@ -155,10 +155,10 @@ img {vertical-align: middle;}
 
 .links {
   color: white;
-  font-family: 'Clicker Script', cursive;
+  /* font-family: 'Clicker Script', cursive; */
   text-decoration:none;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.25em;
 }
 
 .header {
